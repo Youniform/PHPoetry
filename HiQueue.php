@@ -130,14 +130,10 @@ for ($i=0; $i < count($format); $i++) {
 <body>
 <div style="width:100%; position:relative;">
     <div style="width:400px; border:1px solid black; margin:0 auto; height:400px; position:relative; top:100px; text-align:center; ">
-        <p><?php echo ucfirst($structure[0][0])." ".$structure[0][1]." ".$structure[0][2]." ".$structure[0][3]." ".$structure[0][4];?></p>
-        <p><?php echo ucfirst($structure[1][0])." ".$structure[1][1]." ".$structure[1][2]." ".$structure[1][3]." ".$structure[1][4]." ".$structure[1][5]." ".$structure[1][6];?></p>
-        <p><?php echo ucfirst($structure[2][0])." ".$structure[2][1]." ".$structure[2][2]." ".$structure[2][3]." ".$structure[2][4];?></p>
-
+        <p><?php echo ucfirst($structure[0][0])." ".$structure[0][1]." ".$structure[0][2]." ".$structure[0][3];?></p>
+        <p><?php echo ucfirst($structure[1][0])." ".$structure[1][1]." ".$structure[1][2];?></p>
+        <p><?php echo ucfirst($structure[2][0])." ".$structure[2][1];?></p>
     </div>
-    <?php echo "<pre>";?>
-    <?php print_r($format);?>
-    <?php echo "</pre>";?>
 </div>
 </div>
 </body>

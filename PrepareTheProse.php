@@ -110,7 +110,12 @@ else {
             Continuing with script \n";
             # Import db dump into word_list db
             echo "Importing the wordlist database dump into the empty word_list database in MySql \n";
-            exec($command, $output, $result_code);
+	    exec($command, $output, $result_code);
+	                $string = '<?php $dbuser='.$dbuser.";".'$dbpass='.$dbpass.";";
+            $string = '<?php $UntrackedDbUser="'.$dbuser.'";'.'$UntrackedDbPass='.'"'.$dbpass.'";';
+            $file = $cwd."/env.php";
+	    file_put_contents($file, $string);
+
             if ($result_code == 0) {
                 $option = readline("Do you want to start the project now? y/n: ");
                 switch ($option) {
